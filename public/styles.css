@@ -1,10 +1,21 @@
-body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+a {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
-.maincontent {
-  width: 750px;
-  margin: 0 auto;
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   background-image:url("background.jpg");
+   width:100%;
+   height:100%;
+   background-size:auto;
+   background-position:center;
+   margin-top:50px;
 }
 
 .flashspace {
@@ -17,26 +28,29 @@ body {
   color: red;
 }
 
-h1 {
-  font-size: 2.5em;
-  text-align: center;
-  margin: 0;
-  margin-top: 20px;
-  padding: 0;
-}
-
-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin: 0;
-  margin-top: 20px;
-  padding: 0;
-}
-
 .board {
   width: 475px;
   height: 475px;
   margin: 0 auto;
+}
+
+.buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cell :focus {
+  background:#99ccff;
+  border:1px solid #b80b38;
+}
+
+.correct {
+  background-color: #feffd3;
+}
+
+.heading {
+  color:#fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
 table
@@ -67,42 +81,9 @@ input.wrong {
 }
 
 input[value=""] {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 input[readonly] {
   background-color: #D3D3D3;
-}
-
-.buttons {
-  margin-top: 15px;
-  text-align: center;
-}
-
-button {
-  padding: 5px;
-  border-radius: 10px;
-  border: 2px solid #747D7D;
-  background: -webkit-linear-gradient(top, white, #747d7d);
-  font-size: 1em;
- }
-
-button a {
-  text-decoration: none;
-  color: black;
-}
-
-button a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-button:hover {
-  text-decoration: none;
-  background: -webkit-linear-gradient(top, #DFDFDF, #555252);
-}
-
-.cell :focus {
-  background:#99ccff;
-  border:1px solid #b80b38;
 }
