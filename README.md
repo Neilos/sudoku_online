@@ -1,4 +1,7 @@
 # Sudoku Online
+
+http://sudoku-online-24601.herokuapp.com/
+
 A Sinatra web app that mimics the basic functionality of http://sudoku9x9.com/.
 
 
